@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <%- include('../partials/head'); %>
+
+
+    <body>
+      <%- include('../partials/header'); %>
+    <form action="/" method="GET" class="formRegister">
+        <h2 class="registrarse">Iniciar sesión</h2>
+            <div class="info">
+                <div class="subInfo"></div>
+                    <div class="subInfoInfo">
+                        <label for="nombre">Nombre de usuario</label>
+                        <input type="text" name="user" id="nombre" placeholder="Introducí tu nombre de usuario">
+                        <span class="error-message">Usuario inexistente</span>
+                    </div>
+
+            </div>
+
+
+            <div class="info">    
+                <div class="subInfoInfo login">
+                    <label for="pass">Contraseña:</label>
+                    <input type="password" name="pass" id="pass" placeholder="Introducí tu contraseña">
+                    <span class="error-message">Contraseña inválida</span>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="submitForm submitRegister">
+                    <input type="submit" value="Enviar">
+                </div>
+            </div>
+
+
+    </form>
+    <%- include("../partials/footer")  %> 
+</body>
+
+</html>
