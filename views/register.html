@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header header-home>
+        <a href="/" class="logo">
+            <img src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
+        </a>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar productos, marcas">
+            <button>
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <p class="quota"><i class="fas fa-hand-holding-usd"></i>
+            Comprá en cuotas y sin tarjeta de crédito</p>
+        <nav>
+            <ul class="nav-site">
+                <li><a href="">Ofertas</a></li>
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+            <ul class="nav-login">
+                <li><a href="/register">Creá tu cuenta <i class="fas fa-credit-card"></i> </a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt "></i> </a></li>
+                <li><a href="">Mis compras <i class="fas fa-shopping-basket "></i> </a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <form action="/" method="GET" class="formRegister">
+        <h2 class="registrarse">Registrarse</h2>
+            <div class="info">
+                <div class="subInfo"></div>
+                    <div class="subInfoInfo">
+                        <label for="nombre">Nombre y apellido</label>
+                        <input type="text" name="name" id="nombre" placeholder="Nombre y apellido" required>
+                        <span class="error-message">Campo obligatorio</span>
+                    </div>
+                    <div class="subInfoInfo">
+                        <label for="nombre">Nombre de usuario</label>
+                        <input type="text" name="user" id="nombre" placeholder="Nombre de usuario" required>
+                        <span class="error-message">Campo obligatorio</span>
+                    </div>
+                    <div class="subInfoInfo">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="E-mail" placeholder="Email" required>
+                        <span class="error-message">Debes ingresar un mail válido</span>
+                    </div>
+                    <div class="subInfoInfo">
+                        <label for="birthDate" >Fecha de nacimiento</label>
+                        <input type="date" name="birthDate" id="birthDate" class="date" required>
+                        <span class="error-message">Debes seleccionar una fecha</span>
+                    </div>
+                    <div class="subInfoInfo">
+                        <label for="address">Domicilio</label>
+                        <input type="text" name="address" id="address" placeholder="Domicilio" required>
+                        <span class="error-message">Debes ingresar tu domicilio</span>
+                    </div>
+            </div>
+            <div class="info">
+                
+                    <label for="userProfile">Perfil de usuario</label>
+                    <ul class="userProfile">
+                        <li><input type="radio" name="userProfile" id="userProfile" value="comprador">Comprador</input></li>
+                        <li><input type="radio" name="userProfile" id="userProfile" value="vendedor">Vendedor</input></li>
+                    </ul>
+                    <span class="error-message">Debes elegir una opción</span>
+                
+            </div>
+            <div class="info">
+                <label for="interest">Categorías de interés</label>
+                <ul class="interest">
+                    <li><input type="checkbox">Electro</input></li>
+                    <li><input type="checkbox">Moda</input></li>
+                    <li><input type="checkbox">Hogar</input></li>
+                    <li><input type="checkbox">Juguetería</input></li>
+                    <li><input type="checkbox">Vida Sana</input></li>
+                </ul>
+                
+            </div>
+            <div class="info">
+                <div class="subInfoInfo">
+                    <label for="avatar">Foto de usuario</label>
+                    <input class="avatar" type="file" multiple accept="image/png, image/jpeg" id="avatar">
+                </div>
+            </div>
+
+            <div class="info">    
+                <div class="subInfoInfo">
+                    <label for="pass">Contraseña:</label>
+                    <input type="password" name="pass" id="pass" placeholder="Elegí tu contraseña">
+                    <span class="error-message">Ingresa mínimo 8 carácteres</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="subInfoInfo">
+                    <label for="pass">Confirmar contraseña:</label>
+                    <input type="password" name="pass" id="pass" placeholder="Repetí tu contraseña">
+                    <span class="error-message">Las contraseñas no coinciden</span>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="submitForm submitRegister">
+                    <input type="submit" value="Enviar">
+                </div>
+
+                <div class="resetForm resetRegister">
+                    <input type="reset" value="Borrar">
+                </div>
+            </div>
+
+
+    </form>
+
+</body>
+
+</html>

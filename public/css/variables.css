@@ -1,0 +1,20 @@
+:root {
+
+/* Paleta de colores */
+--amarillo: #EAC926;
+--azul: #03264C;
+--celeste: #1259c3;
+--gris-oscuro: #666;
+--gris-claro: #ebebeb;
+--verde: #39b54a;
+
+/* Tipografías */
+--font-roboto: "Roboto", sans-serif;
+
+/* Tamaños Tipográficos */
+--text: 12px;
+--title: 24px;
+--price: 18px;
+--discount-description: 16px;
+
+}

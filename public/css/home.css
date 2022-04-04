@@ -1,0 +1,127 @@
+.main-home {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 300ms;
+  margin: 20px 0;
+}
+
+.card:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+.card-content {
+    position: relative;
+    border-top: 1px solid var(--gris-claro);
+    margin: 15px;
+
+}
+
+
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    color: var(--verde);
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+   }
+   
+
+.card-content .product-info{
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
+
+}
+.card-content .product-info p{
+    font-size: var(--price);
+    width: 30%;
+
+}
+
+.card-content .product-info span{
+    font-size: var(--discount-description);
+    color: var(--verde);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 20.4px;
+    right: 5px;
+    align-items: flex-end;
+    width: 70%;
+}
+
+
+.card-content .product-name{
+    
+    font-size: var(--discount-description);
+    color: var(--gris-oscuro);
+    padding-bottom: 15px;
+    font-weight: unset;
+}
+
+/* MEDIA QUERIES */
+
+    /* TABLET */
+@media (min-width: 361px){
+    .card {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+    }
+    .title-section{
+        width: 100%;
+    }
+}
+
+    /* DESKTOP */
+@media (min-width: 579px){
+    .card {
+        height: 310px;
+        overflow: hidden;
+        transition: 300ms;
+    }
+    .card h5 {
+        position: relative;
+        bottom: 11px;
+        transition: 300ms;
+        
+      }
+      .card:hover h5 {
+        position: relative;
+        bottom: 2px;
+      }
+      .card:hover {    
+        height: 360px;
+        margin-top: 15px;
+      }
+      .icon-truck i {
+        transition: 300ms;
+      }
+      .card:hover i {
+        transform: rotate(360deg);
+        box-shadow: 0 0 5px var(--green);
+      }
+}
